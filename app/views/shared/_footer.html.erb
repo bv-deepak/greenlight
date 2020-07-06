@@ -15,7 +15,7 @@
 
 <footer class="footer pt-3">
   <p class="text-center mb-1">
-    <%= t("footer.powered_by", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %> <%= Greenlight::Application::VERSION %>
+    <%= t("footer.powered_by", href: link_to("MockBoard", "https://mockdel.com", target: "_blank", rel: "noopener")).html_safe %>
     <% if legal_url.present? %>
       <span>
         |
@@ -25,7 +25,7 @@
     <% if privpolicy_url.present? %>
       <span>
         |
-        <%= link_to(t("footer.privpolicy"), privpolicy_url)  %>
+        <%= link_to(t("footer.privpolicy"), "https://mockdel.com")  %>
       </span>
     <% end %>
   </p>
